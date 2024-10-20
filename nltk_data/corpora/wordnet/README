@@ -1,88 +1,101 @@
-# Open English WordNet
 
-Open English WordNet is a lexical network of the English language grouping words into synsets and linking them according
-to relationships such as hypernymy, antonymy and meronymy. It is intended to be used in natural language processing 
-applications and provides deep lexical information about the English language as a graph.
+		This is the README file for WordNet 3.0
 
-Open English WordNet is a fork of the [Princeton Wordnet](https://wordnet.princeton.edu/) developed under
-an open source methodology. The quality and veracity of the resource may differ from the Princeton 
-WordNet and we welcome contributions. Contributions to this wordnet may eventually be incorporated into
-future releases of Princeton WordNet. Correspondance to previous versions and wordnets in other language is provided
-through the [Collaborative Interlingual Index (CILI)](https://github.com/globalwordnet/cili). The Open English WordNet is available as individual files in [GWN-LMF](http://globalwordnet.github.io/schemas/) format.
+1. About WordNet
 
-## Releases
+WordNet was developed at Princeton University's Cognitive Science
+Laboratory under the direction of George Miller, James S. McDonnell
+Distinguished University Professor of Psychology, Emeritus. Over the
+years many linguists, lexicographers, students, and software engineers
+have contributed to the project.
 
-Open English WordNet is released through the [Open English WordNet website](https://en-word.net/). The versions released are
+WordNet is an online lexical reference system.  Word forms in WordNet
+are represented in their familiar orthography; word meanings are
+represented by synonym sets (synsets) - lists of synonymous word forms
+that are interchangeable in some context.  Two kinds of relations are
+recognized: lexical and semantic.  Lexical relations hold between word
+forms; semantic relations hold between word meanings.  
 
-* **2022 Edition** (Released 31st December 2022). [(LMF)](https://en-word.net/static/english-wordnet-2022.xml.gz)
-[(RDF)](https://en-word.net/static/english-wordnet-2022.ttl.gz)
-[(WNDB)](https://en-word.net/static/english-wordnet-2022.zip)
-* **2021 Edition** (Released 9th November 2021). [(LMF)](https://en-word.net/static/english-wordnet-2021.xml.gz)
-[(RDF)](https://en-word.net/static/english-wordnet-2021.ttl.gz)
-[(WNDB)](https://en-word.net/static/english-wordnet-2021.zip)
-* **2020 Edition** (Released 17th April 2020). [(LMF)](https://en-word.net/static/english-wordnet-2020.xml.gz)
-[(RDF)](https://en-word.net/static/english-wordnet-2020.ttl.gz)
-[(WNDB)](https://en-word.net/static/english-wordnet-2020.zip)
-* **2019 Edition** (Released 17th April 2019). [(LMF)](https://en-word.net/static/english-wordnet-2019.xml.gz)
-[(RDF)](https://en-word.net/static/english-wordnet-2019.ttl.gz)
-[(WNDB)](https://en-word.net/static/english-wordnet-2019.zip)
+To learn more about WordNet, the book "WordNet: An Electronic Lexical
+Database," containing an updated version of "Five Papers on WordNet"
+and additional papers by WordNet users, is available from MIT Press:
 
-## Usage
+    http://mitpress.mit.edu/book-home.tcl?isbn=026206197X
 
-To compile these into a single file please use the following script(s)
+2. The WordNet Web Site
 
-    python scripts/from-yaml.py
-    python scripts/merge.py
+We maintain a Web site at:
 
-This will create a file at `wn31.xml` that contains the complete wordnet.
+http://wordnet.princeton.edu
 
-Further conversions are available through the converter [here](http://server1.nlp.insight-centre.org/gwn-converter/).
+Information about WordNet, access to our online interface, and the
+various WordNet packages that you can download are available from our
+web site.  All of the software documentation is available online, as
+well as a FAQ.  On this site we also have information about other
+applications that use WordNet. If you have an application that you
+would like included, please send e-mail to the above address.
 
-## Changes
+3. Contacting Us
 
-We welcome changes, to make a change please read our [contributing guidelines](CONTRIBUTING.md) 
-and make a pull request.
+Ongoing deveopment work and WordNet related projects are done by a
+small group of researchers, lexicographers, and systems programmers.
+Since our resources are VERY limited, we request that you please
+confine correspondence to WordNet topics only.  Please check the
+documentation, FAQ, and other resources for the answer to your
+question or problem before contacting us.
 
-Open English WordNet is a high-quality resource that acts as a gold-standard for natural language processing,
-as such we cannot accept any automatically generated results that have not been manually validated.
+If you have trouble installing or downloading WordNet, have a bug to
+report, or any other problem, please refer to the online FAQ file
+first.  If you can heal thyself, please do so.  The FAQ will be
+updated over time.  And if you do find a previously unreported
+problem, please use our Bug Report Form:
 
-Please be aware that we use the [Global WordNet Association LMF](https://globalwordnet.github.io/schemas/) and please read the guidelines for using the [format](FORMAT.md)
+http://wordnet.princeton.edu/cgi-bin/bugsubmit.pl
 
-## License
+When reporting a problem, please be as specific as possible, stating
+the computer platform you are using, which interface you are using,
+and the exact error.  The more details you can provide, the more
+likely it is that you will get an answer. 
 
-WordNet is released under [CC-BY 4.0](LICENSE.md)
+There is a WordNet user discussion group mailing list that we invite
+our users to join.  Users use this list to ask questions of one
+another, announce extensions to WordNet that they've developed, and
+other topics of general usefulness to the user community.
 
-## References
+Information on joining the user discussion list, reporting bugs and other
+contact information is in found on our website at:
 
-The canonical citation for English Wordnet is:
+http://wordnet.princeton.edu/contact
 
-* John P. McCrae, Alexandre Rademaker, Francis Bond, Ewa Rudnicka and Christiane Fellbaum (2019) [English WordNet 2019 – An Open-Source WordNet for English](https://aclanthology.org/2019.gwc-1.31/). In *Proceedings of the 10th Global WordNet Conference – GWC 2019*, Wrocław
+4. Current Release
 
-More recent papers describing it include:
+WordNet Version 3.0 is the latest version available for download.  Two
+basic database packages are available - one for Windows and one for
+Unix platforms (including Mac OS X).  See the file ChangeLog (Unix) or
+CHANGES.txt (Windows) for a list of changes from previous versions.
 
-* John Philip McCrae, Alexandre Rademaker, Ewa Rudnicka, Francis Bond (2020)
-[English WordNet 2020: Improving and Extending a WordNet for English using an Open-Source Methodology](https://aclanthology.org/2020.mmw-1.3/). In *Proceedings of the LREC 2020 Workshop on Multimodal Wordnets (MMW2020)*, Marseille
+WordNet packages can either be downloaded from our web site via:
 
-* John P. McCrae, Michael Wayne Goodman, Francis Bond, Alexandre Rademaker, Ewa Rudnicka, Luis Morgado Da Costa (2020) [The GlobalWordNet Formats: Updates for 2020](https://aclanthology.org/2021.gwc-1.11/). In *Proceedings of the 11th Global Wordnet Conference (GWC2021)*, University of South Africa (UNISA)
+http://wordnet.princeton.edu/obtain
 
-It incorporates material from:
+The Windows package is a self-extracting archive that installs itself
+when you double-click on it.
 
-* Christiane Fellbaum, editor (1998) *WordNet: An Electronic Lexical Database*. The MIT Press, Cambridge, MA.
-* Merrick Choo Yeu Herng and Francis Bond (2021) [Taboo wordnet](https://aclanthology.org/2021.gwc-1.5/). In *Proceedings of the 11th Global Wordnet Conference (GWC2021)*, University of South Africa (UNISA).
+Beginning with Version 2.1, we changed the Unix package to a GNU Autotools
+package.  The WordNet browser makes use of the open source Tcl and Tk
+packages. Many systems come with either or both pre-installed.  If
+your system doesn't (some systems have Tcl installed, but not Tk)
+Tcl/Tk can be downloaded from:
+
+http://www.tcl.tk/ 
+
+Tcl and Tk must be installed BEFORE you compile WordNet. You must also
+have a C compiler before installing Tcl/Tk or WordNet.  WordNet has
+been built and tested with the GNU gcc compiler.  This is
+pre-installed on most Unix systems, and can be downloaded from:
+
+http://gcc.gnu.org/
+
+See the file INSTALL for detailed WordNet installation instructions.
 
 
-## Contributors
-
-* John P. **McCrae**
-* Alexandre **Rademaker**
-* Ewa **Rudnicka**
-* Bernard **Bou**
-* Daiki **Nomura**
-* David **Cillessen**
-* Ciara **O'Loughlin**
-* Cathal **McGovern**
-* Francis **Bond**
-* Eric **Kafe**
-* Michael Wayne **Goodman**
-* Merrick **Choo** Yeu Herng
-* Enejda **Nasaj**
