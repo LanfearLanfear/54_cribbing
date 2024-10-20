@@ -74,12 +74,12 @@ if __name__ == '__main__':
     ciphertext_minus_plaintext = np.mod(np.array([19, 21, 23, 27, 2, 14, 10, 19]) - indices, 29)
     plaintext_plus_ciphertext = np.mod(indices + np.array([19, 21, 23, 27, 2, 14, 10, 19]), 29)
     df = pd.DataFrame({"Word": words.tolist(),
-                       "Indices": indices.tolist(),
+                       "Indices word": indices.tolist(),
                        "GP sum": gp_sums.tolist(),
                        "GP sum red header": gp_sums_read_header.tolist(),
                        "Plaintext minus ciphertext": plaintext_minus_ciphertext.tolist(),
                        "Plaintext plus ciphertext": plaintext_plus_ciphertext.tolist(),
-                       "Ciphertext_minus_plaintext": ciphertext_minus_plaintext.tolist()
+                       "Ciphertext minus plaintext": ciphertext_minus_plaintext.tolist()
                        })
     df.to_csv("cribbing_list_full.csv", header=True, index=False, sep=';')
 
